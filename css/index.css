@@ -1,0 +1,121 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #f9f9f9;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.s2{
+	font-size: 0.96rem;
+}
+.grey{
+	color: #a9a9a9;
+}
+.smoke{
+	color: #707070;
+}
+
+.red{
+	color: #d43b33;
+}
+li{
+	list-style-type: none;
+}
+.nav{
+	margin-bottom: 1rem;
+}
+.nav ul{
+	display: flex;
+	justify-content: center;
+	flex-wrap: nowrap;
+	font-size: 1rem;
+	margin: 0;
+	padding: 0 1rem;
+	background-color: white;
+}
+
+li{
+	display: inline-block;
+	margin: 0 0.2rem;
+	flex-shrink: 0;
+	width: 33%;
+}
+li:first-child>a,li>a:hover{
+	border-bottom: solid 2px #d43b33;
+	color: #d43b33;
+}
+h1,p{
+	margin: 0;
+	font-weight: lighter;
+}
+
+
+.tab_button{
+	display: inline-block;
+	padding: 0.8rem 0;
+	width: 100%;
+	text-align: center;
+
+}
+
+/*tab内容*/
+.tab{
+	display: none;
+}
+.tab:first-child{
+	display: block;
+}
+.item{
+	display: flex;
+	align-items: center;
+	height: 6.5rem;
+	background-color: white;
+	padding: 1rem;
+	position: relative;
+	border-bottom: solid 2px #f9f9f9;
+}
+.item_img{
+	max-height: 6.5rem;
+	max-width: 6.5rem;
+	border-radius: 5px;
+}
+.item_info{
+	margin-left: 0.8rem;
+}
+.choose{
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+	border: solid 2px #f0f0f0;
+	vertical-align: top;
+}
+.choose span{
+	font-size: 0.9rem;
+	padding: 0.5rem;
+	line-height: 1.6rem;
+
+}
+.minus,.plus{
+	display: inline-block;
+	height: 1.6rem;
+	width: 1.6rem;
+	background-color: #e2e2e2;
+	vertical-align: top;
+
+}
+
+.minus{
+	background-image: url(../images/minus_grey.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #f9f9f9;
+}
+.plus{
+	background-image: url(../images/plus.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
