@@ -2,13 +2,16 @@ body{
 	margin: 0;
 	padding: 0;
 	background-color: #f9f9f9;
+	position: relative;
 }
 
 a{
 	text-decoration: none;
 	color: inherit;
 }
-
+.s1{
+	font-size: 1.2rem;
+}
 .s2{
 	font-size: 0.96rem;
 }
@@ -25,8 +28,14 @@ a{
 li{
 	list-style-type: none;
 }
+
+/*头部*/
 .nav{
 	margin-bottom: 1rem;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2;
 }
 .nav ul{
 	display: flex;
@@ -63,6 +72,9 @@ h1,p{
 }
 
 /*tab内容*/
+.main{
+	margin-top: 3.5rem;
+}
 .tab{
 	display: none;
 }
@@ -119,3 +131,40 @@ h1,p{
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
+/*输入金额*/
+
+.custom{
+	background-color: white;
+	padding: 1rem 2rem;
+}
+
+.custom_h{
+	margin-bottom: 1.8rem;
+}
+.custom_price{
+	border:none;
+	border-bottom: solid 1px #a9a9a9;
+	border-radius: 0;
+	margin: 1.3rem 0;
+	padding: 0.5rem 0 0.5rem 2.2rem;
+	display: block;
+	width: 100%;
+	background-image: url(../images/rmb.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: -0.4rem;
+	font-size: 2rem;
+}
+
+.button{
+	display: block;
+	border: none;
+	background-color: #d43b33;
+	color: white;
+	width: 100%;
+	padding: 0.8rem 0;
+	border-radius: 5px;
+	-webkit-appearance:none;
+}
+
